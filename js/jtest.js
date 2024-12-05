@@ -1,13 +1,16 @@
-let nb1 = 3 
-let nb2 = 6 
-
-let total = nb1 + nb2;
-let somme = 2023 - total;
-while (total < 2023) {
-    alert(`
-        ${nb1} + ${nb2} = ${total}
-        il faut ajouter ${somme}
-        `)   
+let nb = 1 
+while (nb < 100) {
+    console.log(nb)
+    nb = nb + 1
+    if (nb % 3 == 0) {
+        console.log("Fizz")
+    }
+    if (nb % 5 == 0) {
+        console.log("Buzz")
+    }
+    if (nb % 3 == 0 && nb % 5 == 0) {
+        console.log("FizzBuzz")
+    }
 }
 
 
